@@ -62,13 +62,13 @@ This document provides detailed information about the testing of each API endpoi
 - **Response Example**:
 ![Create Todo Response](./screenshots-week-8-assignment/create-todo-response.png)
 
-### 2. Get All Todos
-- **Endpoint**: `GET /api/todos`
-- **Test Description**: Retrieving all todos for the authenticated user
+### 2. Update Todo
+- **Endpoint**: `PATCH /api/todos/{id}`
+- **Test Description**: Updating a todo's title, description, completion status, or editing status
 - **Request Example**:
-![Get All Todos Request](./screenshots-week-8-assignment/get-all-todo-request.png)
+![Update Todo Request](./screenshots-week-8-assignment/update-todo-request.png)
 - **Response Example**:
-![Get All Todos Response](./screenshots-week-8-assignment/get-all-todo-response.png)
+![Update Todo Response](./screenshots-week-8-assignment/update-todo-response.png)
 
 ### 3. Get Todo by ID
 - **Endpoint**: `GET /api/todos/{id}`
@@ -78,13 +78,13 @@ This document provides detailed information about the testing of each API endpoi
 - **Response Example**:
 ![Get Todo Response](./screenshots-week-8-assignment/get-todo-response.png)
 
-### 4. Update Todo
-- **Endpoint**: `PATCH /api/todos/{id}`
-- **Test Description**: Updating a todo's title, description, completion status, or editing status
+### 4. Get All Todos
+- **Endpoint**: `GET /api/todos`
+- **Test Description**: Retrieving all todos for the authenticated user
 - **Request Example**:
-![Update Todo Request](./screenshots-week-8-assignment/update-todo-request.png)
+![Get All Todos Request](./screenshots-week-8-assignment/get-all-todo-request.png)
 - **Response Example**:
-![Update Todo Response](./screenshots-week-8-assignment/update-todo-response.png)
+![Get All Todos Response](./screenshots-week-8-assignment/get-all-todo-response.png)
 
 ## Security Features
 
@@ -92,11 +92,3 @@ This document provides detailed information about the testing of each API endpoi
 2. **Password Hashing**: User passwords are hashed using bcrypt before storage
 3. **Token-based Authorization**: Each request is validated using Bearer token authentication
 4. **User-Specific Data Access**: Users can only access and modify their own todos and profile
-
-## Testing Notes
-
-1. All tests were performed using Swagger UI at `/api-docs`
-2. Tests include both successful and error scenarios
-3. All protected endpoints require proper authorization using Bearer token
-4. File uploads are tested using multipart/form-data format
-5. Response codes and messages are verified for each endpoint
