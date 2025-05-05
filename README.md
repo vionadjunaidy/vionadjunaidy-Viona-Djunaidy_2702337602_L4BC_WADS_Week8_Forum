@@ -1,4 +1,4 @@
-# Todo App REST API Testing Documentation
+# Todo App API Testing Documentation
 
 This document provides detailed information about the testing of each API endpoint using Swagger UI. Each test includes the request, response, and authorization aspects of the API endpoints.
 
